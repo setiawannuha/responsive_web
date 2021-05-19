@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    .container div{
+      border: 1px solid salmon;
+      margin: 5px;
+    }
+    .bottom{
+      display: flex;
+    }
+    .left{
+      flex-grow: 1;
+    }
+    .content{
+      flex-grow: 3;
+    }
+    .right{
+      flex-grow: 1;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">header</div>
+    <div class="bottom">
+      <div class="left">left</div>
+      <div class="content">
+        <div class="content-top">content top</div>
+        <div class="content-bottom">content bottom</div>
+      </div>
+      <div class="right">right</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+.container{
+  display: flex;
+  width: 100%;
+}
+.container div{
+  flex-grow: 1;
+  height: 100vh;
+}
+.background{
+  background-image: url('https://s3-alpha-sig.figma.com/img/94cf/d4df/dd22d129a5bbab44da4da62471dafa2a?Expires=1622419200&Signature=hin6HwHetsjSEorjYxEv-BFsqOgINTX5ZE-FfKz-vUYEyf-3JVVgFNWTMnaFETdaactndx7RmttF83IODZwjqi3Jmeip2Znnde27EEHUYy6By-vDidjeYi6JOlQKUfV87DmhGR2WHa~8Q~aB7PZaMcVdWqp23Gtg7NY8BRXX3D6mGD7X7R8mB8oGbXe~uurfSalo2YjbzQ4T7qXM0EAfxO-kivqPr6g3ePOlqx04AbDn5MiRMKTq~zxWabeJKTlhvu9FoU81yuV4IMyvPGcHwXZ-t~mUdZ18i64ll2bdrObqaZVp7gOOeCB6rzi3UNLJlKe2cq11UaqNRNzcKjznNQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 576px){
+  .background{
+    display: none;
+  }
+}

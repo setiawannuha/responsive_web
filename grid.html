@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid-container{
+      width: 100%;
+      background-color: gold;
+      display: grid;
+      grid-gap: 30px;
+      grid-template-areas: 
+        "header header header header header header"
+        "sidebar content-1 content-1 content-1 content-1 content-1"
+        "sidebar content-2 content-3 content-3 content-3 content-3"
+        "footer-0 footer footer footer footer footer";
+      ;
+
+      /* rows = baris / vertical */
+      /* grid-template-rows: auto auto auto; */
+      /* column = kolom / horizontal */
+      /* grid-template-columns: 100px auto auto; */
+    }
+    .grid-container div{
+      /* height: 100px;
+      width: 100px; */
+      background-color: #ff0000;
+    }
+    .col-1{
+      grid-area: header;
+    }
+    .col-2{
+      grid-area: sidebar;
+    }
+    .col-3{
+      grid-area: content-1;
+    }
+    .col-4{
+      grid-area: content-2;
+    }
+    .col-5{
+      grid-area: content-3;
+    }
+    .col-6{
+      grid-area: footer;
+    }
+    .col-7{
+      grid-area: footer-0;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="col-1">Satu</div>
+    <div class="col-2">Dua</div>
+    <div class="col-3">Tiga</div>
+    <div class="col-4">Empat</div>
+    <div class="col-5">Lima</div>
+    <div class="col-6">Enam</div>
+    <div class="col-7">Tujuh</div>
+  </div>
+</body>
+</html>
