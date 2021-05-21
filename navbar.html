@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+        padding: 0px;
+        margin: 0px;
+        font-family: sans-serif;
+    }
+    /* mengatur .logo & .dropdown supaya horizontal */
+    nav{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      box-shadow: 1px 1px 10px #ccc;
+    }
+    /* styling untuk class logo */
+    .logo{
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* hanya mengatur lebar & display serta membuat component di dalam nya menjadi horizontal */
+    .dropdown{
+      width: 70%;
+      display: flex;
+    }
+    /* styling untuk pembungkus icon hamburger menu */
+    .icon-menu{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    /* styling icon hamburger menu */
+    .icon-menu img{
+      width: 50px;
+      display: none;
+    }
+
+    /* untuk mengatur supaya primary menu & secondary menu menjadi horizontal */
+    .menu{
+      display: flex;
+      width: 100%;
+    }
+    .primary-menu{
+      flex-grow: 1;
+    }
+    .primary-menu ul {
+      list-style-type: none;
+      display: flex;
+    }
+    .primary-menu ul li{
+      padding: 10px 20px;
+    }
+    .secondary-menu{
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .secondary-menu ul {
+      list-style-type: none;
+      display: flex;
+    }
+    .secondary-menu ul li{
+      padding: 10px 20px;
+    }
+    
+    /* ketika tampilan mobile */
+    @media screen and (max-width: 576px){
+      /* mengubah icon yang sebelumnya hide menjadi terlihat */
+      .icon-menu img{
+        display: block;
+      }
+      /* mengatur posisi logo */
+      .logo{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 15px;
+        padding-left: 20px;
+      }
+      /* mengubah tampilan menu menjadi hide */
+      .menu{
+        display: none;
+      }
+      /* mengubah class icon menu & class menu menjadi vertical */
+      .dropdown:hover{
+        display: flex;
+        flex-direction: column;
+      }
+      /* ketika class dropdown di hover, maka class menu menjadi tampil */
+      .dropdown:hover .menu{
+        display: flex;
+      }
+      /* agar icon hamburger menu menjadi di samping kanan */
+      .icon-menu{
+        display: flex;
+        justify-content: flex-end;
+      }
+      /* agar class menu menjadi di samping kiri */
+      .menu{
+        margin-left: -50%;
+        flex-direction: column;
+      }
+      /* mengubah ul menu yang sebelumnya horizontal menjadi vertical */
+      .primary-menu ul {
+        flex-direction: column;
+      }
+      /* mengubah posisi ul menu yang sebelumnya di tengah menjadi di samping kiri */
+      .secondary-menu{
+        justify-content: flex-start;
+      }
+      /* mengubah ul menu yang sebelumnya horizontal menjadi vertical */
+      .secondary-menu ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Logo</div>
+    <div class="dropdown">
+      <div class="icon-menu">
+        <img src="https://clipartart.com/images/hamburger-menu-icon-clipart-3.png" alt="">
+      </div>
+      <div class="menu">
+        <div class="primary-menu">
+          <ul>
+            <li>Home</li>
+            <li>Product</li>
+            <li>History</li>
+          </ul>
+        </div>
+        <div class="secondary-menu">
+          <ul>
+            <li>Login</li>
+            <li>Signup</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
