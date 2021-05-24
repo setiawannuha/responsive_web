@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .navbar{
+      background-color: #0099ff;
+      height: 100px;
+      position: fixed;
+      top: 0px;
+      width: 100%;
+    }
+    .jumbotroon{
+      margin-top: 95px;
+      background-image: url('https://img.freepik.com/free-vector/abstract-flat-colorful-geometric-shapes-background_144290-24.jpg?size=626&ext=jpg');
+      background-size: cover;
+      height: 200px;
+    }
+    .paragraf-desktop{
+      background-color: blueviolet !important;
+      display: block;
+      width: 200px;
+      height: 200px;
+      overflow: scroll;
+    }
+    .paragraf-desktop{
+      background-color: aqua;
+    }
+    .paragraf-mobile{
+      background-color: blue;
+      display: none;
+    }
+    .row{
+      display: flex;
+      width: 300px;
+      overflow: scroll;
+      flex: auto;
+    }
+    .row .col{
+      flex-basis: 100px;
+      width: 100px;
+      height: 100px;
+      background-color: #0099ff;
+      margin: 10px;
+    }
+    @media screen and (max-width: 576px){
+      .navbar{
+        background-color: red;
+      }
+      .paragraf-desktop{
+        display: none;
+      }
+      .paragraf-mobile{
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    Navbar
+  </nav>
+  <div class="jumbotroon">
+    Hello world
+    <div class="paragraf-mobile">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
+  </div>
+  <div class="paragraf-desktop">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </div>
+  <div class="box">
+    <div class="row">
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+      <div class="col">Hwllo world</div>
+    </div>
+  </div>
+</body>
+</html>
